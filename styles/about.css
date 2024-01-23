@@ -1,0 +1,146 @@
+.about-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.information-of-about-section {
+    margin: 130px 15px 0 0;
+    width: 550px;
+    height: 420px;
+}
+
+.information-of-about-section > h1 {
+    font-size: 32px;
+    color: #444444;
+    line-height: 1;
+}
+
+.information-of-about-section > p {
+    margin: 5px 0;
+    line-height: 1.5;
+    color: #444444;
+}
+
+.information-of-about-section > ul > li {
+    list-style: none;
+    color: #444444;
+    line-height: 30px;
+    font-size: 18px;
+    padding-left: 23px;
+}
+
+.information-of-about-section > ul {
+    position: relative;
+
+}
+
+.information-of-about-section > ul > li > i {
+    color: #FFBB38;
+    position: absolute;
+    left: 0;
+}
+
+.image-of-about-section {
+    margin: 130px 0 0 15px;
+}
+
+.image-of-about-section > img {
+    width: 550px;
+    height: 400px;
+}
+
+@media (max-width: 1200px) {
+    .about-section {
+        height: 110vh;   
+    }
+
+    .information-of-about-section {
+        width: 470px;
+    }
+
+    .information-of-about-section > h1 > br {
+        display: none;
+    }
+
+    .information-of-about-section > p > em > br {
+        display: none;
+    }
+
+    .information-of-about-section > ul > li > br {
+        display: none;
+    }
+
+    .information-of-about-section > p > br {
+        display: none;
+    }
+
+    .image-of-about-section > img {
+        width: 450px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 180vh;
+    }
+
+    .image-of-about-section {
+        margin-top: 40px;
+    }
+
+    .image-of-about-section > img {
+        width: 680px;
+        height: 520px;
+    }
+
+    .information-of-about-section {
+        width: 690px;
+        margin: 30px 0 0 40px;
+    }
+
+    .information-of-about-section > p {
+        padding-top: 10px;
+    }
+}
+
+
+@media (max-width: 780px) {
+    .about-section {
+        height: 155vh;
+    }
+
+    .image-of-about-section > img {
+        width: 530px;
+        height: 380px;
+    }
+
+    .information-of-about-section {
+        width: 550px;
+    }
+
+    .information-of-about-section > p > em > br {    
+        display: block;
+    }
+}
+
+@media (max-width: 570px) {
+    .image-of-about-section {
+        width: 100%;
+    }
+
+    .image-of-about-section > img {
+        width: 550px;
+        height: 400px;
+    }
+
+    .information-of-about-section {
+        max-width: 550px;
+        min-height: 400px;
+        margin: 20px 10px 0 10px;
+    }
+}
