@@ -42,7 +42,7 @@ header {
 }
 
 nav {
-    margin: 0 140px;
+    margin: 0 250px;
 }
 
 nav > ul {
@@ -147,15 +147,21 @@ nav > ul > li:hover .drop-down ul li:hover {
     display: none;
 }
 
+@media (max-width: 1400px) {
+    nav {
+        margin: 0 160px;
+    }
+}
+
 @media (max-width: 1200px) {
     nav {
-        margin: 0 80px;
+        margin: 0 70px;
     }
 }
 
 @media (max-width: 992px) {
     .logo {
-        padding-right: 250px;
+        padding-right: 240px;
     }
 
     nav {
@@ -166,7 +172,7 @@ nav > ul > li:hover .drop-down ul li:hover {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 250px;
+        padding-left: 240px;
       }
     
       .burger-menu {
@@ -183,16 +189,21 @@ nav > ul > li:hover .drop-down ul li:hover {
         height: 1px;
         border: 1px solid white;
       }
-    
 }
 
 @media (max-width: 780px) {
     .logo {
-        padding-right: 150px;
+        padding: 0 150px 0 0;
+        margin: 0;
     }
 
     .get-started-btn {
-        padding-left: 150px;
+        padding: 0 0 0 150px;
+        margin: 0;
+    }
+
+    header {
+        width: 100%;   
     }
 }
 

@@ -1,24 +1,24 @@
 .about-section {
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
+    padding: 60px 0;
+    overflow: hidden;
 }
 
 .information-of-about-section {
-    margin: 130px 15px 0 0;
-    width: 550px;
-    height: 420px;
+    margin: 0px 10px 0 0;
+    width: 670px;
 }
 
 .information-of-about-section > h1 {
-    font-size: 32px;
+    font-size: 30px;
     color: #444444;
     line-height: 1;
 }
 
 .information-of-about-section > p {
-    margin: 5px 0;
+    margin: 15px 0;
     line-height: 1.5;
     color: #444444;
 }
@@ -27,13 +27,12 @@
     list-style: none;
     color: #444444;
     line-height: 30px;
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 23px;
 }
 
 .information-of-about-section > ul {
     position: relative;
-
 }
 
 .information-of-about-section > ul > li > i {
@@ -43,37 +42,28 @@
 }
 
 .image-of-about-section {
-    margin: 130px 0 0 15px;
+    margin: 0 0 0 10px;
 }
 
 .image-of-about-section > img {
-    width: 550px;
-    height: 400px;
+    width: 650px;
+    height: 480px;
+}
+
+@media (max-width: 1400px) {
+    .information-of-about-section {
+        width: 565px;
+    }
+
+    .image-of-about-section > img {
+        width: 550px;
+        height: 400px;
+    }
 }
 
 @media (max-width: 1200px) {
-    .about-section {
-        height: 110vh;   
-    }
-
     .information-of-about-section {
-        width: 470px;
-    }
-
-    .information-of-about-section > h1 > br {
-        display: none;
-    }
-
-    .information-of-about-section > p > em > br {
-        display: none;
-    }
-
-    .information-of-about-section > ul > li > br {
-        display: none;
-    }
-
-    .information-of-about-section > p > br {
-        display: none;
+        width: 450px;
     }
 
     .image-of-about-section > img {
@@ -86,34 +76,26 @@
     .about-section {
         flex-direction: column-reverse;
         align-items: center;
-        height: 180vh;
-    }
-
-    .image-of-about-section {
-        margin-top: 40px;
+        justify-content: start;
     }
 
     .image-of-about-section > img {
-        width: 680px;
+        width: 700px;
         height: 520px;
     }
 
     .information-of-about-section {
-        width: 690px;
-        margin: 30px 0 0 40px;
+        width: 650px;
+        margin: 20px 0 0 0;
     }
 
     .information-of-about-section > p {
-        padding-top: 10px;
+        padding-top: 5px;
     }
 }
 
 
 @media (max-width: 780px) {
-    .about-section {
-        height: 155vh;
-    }
-
     .image-of-about-section > img {
         width: 530px;
         height: 380px;
@@ -129,12 +111,8 @@
 }
 
 @media (max-width: 570px) {
-    .image-of-about-section {
-        width: 100%;
-    }
-
     .image-of-about-section > img {
-        width: 550px;
+        max-width: 530px;
         height: 400px;
     }
 
