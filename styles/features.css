@@ -12,6 +12,8 @@
 .image-of-features > img {
     height: 450px;
     width: 650px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .information-of-features {
@@ -59,5 +61,51 @@
 
     .information-of-features {
         width: 480px;
+    }
+}
+
+@media (max-width: 992px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-of-features > img {
+        width: 700px;
+        height: 400px;
+    }
+
+    .information-of-features {
+        margin-top: 50px;
+        width: 700px;
+        height: 360px;
+    }
+}
+
+@media (max-width: 780px) {
+    .image-of-features > img {
+        width: 550px;
+        height: 400px;
+    }
+
+    .information-of-features {
+        width: 500px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 570px) {
+    .image-of-features {
+        padding: 0;
+        width: 100%;
+    }
+
+    .image-of-features > img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .information-of-features {
+        width: 90%;
     }
 }
