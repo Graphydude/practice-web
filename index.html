@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="./styles/hero.css" />
     <link rel="stylesheet" href="./styles/about.css" />
     <link rel="stylesheet" href="./styles/clients.css" />
-    <link rel="stylesheet" href="./styles/features.css">
+    <link rel="stylesheet" href="./styles/features.css" />
+    <link rel="stylesheet" href="./styles/services.css" />
     <title>Gp Bootstrap Template-Index</title>
   </head>
   <body>
@@ -27,7 +28,7 @@
           <ul>
             <li><a class="active" href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Team</a></li>
             <li>
@@ -67,10 +68,29 @@
           </ul>
         </nav>
         <div class="get-started-btn">
-          <a href="#">Get Started</a>
-          <div class="burger-menu"><span></span><span></span><span></span></div>
+          <a class="aboutBtn" href="#" onclick="alertBtn()">Get Started</a>
+          <div class="burger-menu" onclick="sidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
+        <div class="back-sidebar">
+          <div class="x-div">
+            <i class="bi bi-x-lg"></i>
+          </div>
+        <ul class="sidebar">
+          <li><a href="#hero"></a></li>
+          <li><a href="#about"></a></li>
+          <li><a href="#services"></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+        </ul>
+      </div>
       </header>
+      <!-- hero section -->
       <section id="hero">
         <div class="hero-section">
           <div class="hero-text-div">
@@ -107,6 +127,7 @@
           </div>
         </div>
       </section>
+      <!-- about section -->
       <section class="about-section" id="about">
         <div class="information-of-about-section">
           <h1>
@@ -146,14 +167,23 @@
           <img src="./images/about.webp" alt="" />
         </div>
       </section>
+      <!-- clients -->
       <section class="clients" id="clients">
         <div class="images-of-fluid">
           <img src="./images/client-1.webp" alt="" />
           <img src="./images/client-2.webp" alt="" />
           <img class="dis-none" src="./images/client-3.webp" alt="" />
           <img class="dis-none" src="./images/client-4.webp" alt="" />
-          <img class="images-of-fluid-dis-none dis-none" src="./images/client-5.webp" alt="" />
-          <img class="images-of-fluid-dis-none dis-none" src="./images/client-6.webp" alt="" />
+          <img
+            class="images-of-fluid-dis-none dis-none"
+            src="./images/client-5.webp"
+            alt=""
+          />
+          <img
+            class="images-of-fluid-dis-none dis-none"
+            src="./images/client-6.webp"
+            alt=""
+          />
         </div>
         <div class="swiper-pagination">
           <ul>
@@ -166,6 +196,7 @@
           </ul>
         </div>
       </section>
+      <!-- features  -->
       <section class="features">
         <div class="image-of-features">
           <img src="./images/features (1) (1).webp" alt="" />
@@ -205,6 +236,67 @@
           </div>
         </div>
       </section>
+      <!-- services section  -->
+      <section id="services" class="ser">
+        <div class="ser-div">
+          <div class="ser-title">
+            <h5>SERVICES</h5>
+            <h1>CHECK OUR SERVICES</h1>
+          </div>
+          <div class="ser-boxes">
+            <div class="ser-box">
+              <i class="bi bi-dribbble"></i>
+              <h1>Lorem Ipsum</h1>
+              <p>
+                Voluptatum deleniti atque corrupti quos dolores et quas
+                molestias excepturi
+              </p>
+            </div>
+            <div class="ser-box">
+              <i class="bi bi-file-earmark-text"></i>
+              <h1>Sed ut Perspiciatis</h1>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore
+              </p>
+            </div>
+            <div class="ser-box">
+              <i class="bi bi-speedometer2"></i>
+              <h1>Magni Dolores</h1>
+              <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia
+              </p>
+            </div>
+            <div class="ser-box">
+              <i class="bi bi-globe-americas"></i>
+              <h1>Nemo Enim</h1>
+              <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis
+              </p>
+            </div>
+            <div class="ser-box">
+              <i class="bi bi-file-slides"></i>
+              <h1>Dele cardo</h1>
+              <p>
+                Quis consequatur saepe eligendi voluptatem consequatur dolor
+                consequuntur
+              </p>
+            </div>
+            <div class="ser-box">
+              <i class="bi bi-archive"></i>
+              <h1>Divera don</h1>
+              <p>
+                Modi nostrum vel laborum. Porro fugit error sit minus sapiente
+                sit aspernatur
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <script src="/javascript.js"></script>
   </body>
 </html>

@@ -112,13 +112,18 @@
 
 @media (max-width: 570px) {
     .image-of-about-section > img {
+        width: 100%;
         max-width: 530px;
         height: 400px;
+        padding: 0 10px;
+        margin: 0;
     }
 
     .information-of-about-section {
+        width: 100%; 
         max-width: 550px;
         min-height: 400px;
         margin: 20px 10px 0 10px;
+        padding: 0 10px;
     }
 }

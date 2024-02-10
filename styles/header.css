@@ -147,6 +147,40 @@ nav > ul > li:hover .drop-down ul li:hover {
     display: none;
 }
 
+.back-sidebar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.747);
+}
+
+.x-div > i {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 2%;
+    top: 3%;
+}
+
+.sidebar {
+    background-color: white;
+    width: 96%;
+    height: 90%;
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.sidebar > li > a {
+    color: black;
+}
+
 @media (max-width: 1400px) {
     nav {
         margin: 0 160px;

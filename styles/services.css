@@ -1,0 +1,138 @@
+#services {
+  width: 100%;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.ser-div {
+  max-width: 1300px;
+}
+
+.ser-title > h5 {
+  font-size: 16px;
+  color: #00000073;
+}
+
+.ser-title > h5::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #ffde9e;
+  margin: 4px 10px;
+}
+
+.ser-title > h1 {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.ser-boxes {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 25px;
+  width: 100%;
+}
+
+.ser-box {
+  max-width: 416px;
+  height: 337px;
+  border: 0.5px solid rgba(0, 0, 0, 0.185);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.ser-box > i {
+  font-size: 26px;
+  padding: 20px;
+  background-color: #ffbb38;
+  border-radius: 5px;
+}
+
+.ser-box > h1 {
+  font-weight: 700;
+  line-height: 3;
+}
+
+.ser-box > p {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.ser-box > h1:hover {
+  color: #ffbb38;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+.ser-box:hover {
+  transition: 0.3s all;
+  box-shadow: 0 8px 32px 0 rgba(30, 31, 36, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding-bottom: 10px;
+}
+
+@media (max-width: 1400px) {
+    .ser-div {
+      max-width: 1120px;
+    }
+
+    .ser-box {
+      max-width: 356px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .ser-div {
+      max-width: 935px;
+    }
+
+    .ser-box {
+      max-width: 295px;
+      max-height: 361px;
+    }
+}
+
+@media (max-width: 992px) {
+    .ser-div {
+      max-width: 697px;
+    }
+
+    .ser-box {
+      max-width: 336px;
+      max-height: 337px;
+    }
+}
+
+@media (max-width: 780px) {
+    .ser-div {
+      max-width: 516px;
+    }
+
+    .ser-box {
+      max-width: 516px;
+      max-height: 337px;
+    }
+}
+
+@media (max-width: 570px) {
+    .ser-div {
+      max-width: 100%;
+    }
+
+    .ser-box {
+      max-width: 551px;
+      max-height: 313px;
+      margin: 0 10px;
+    }
+
+    .ser-title {
+      margin-left: 10px;
+    }
+}
