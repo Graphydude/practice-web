@@ -143,42 +143,16 @@ nav > ul > li:hover .drop-down ul li:hover {
     left: 0;
 }
 
-.burger-menu {
+.bi-list {
     display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .back-sidebar {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.747);
-}
-
-.x-div > i {
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    right: 2%;
-    top: 3%;
-}
-
-.sidebar {
-    background-color: white;
-    width: 96%;
-    height: 90%;
-    position: fixed;
-    bottom: 2%;
-    left: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.sidebar > li > a {
-    color: black;
+    display: none;
 }
 
 @media (max-width: 1400px) {
@@ -207,22 +181,62 @@ nav > ul > li:hover .drop-down ul li:hover {
         justify-content: space-between;
         align-items: center;
         padding-left: 240px;
+        gap: 10px;
       }
     
-      .burger-menu {
-        height: 15px;
+      .bi-list {
+        display: block;
+      }
+
+      .back-sidebar {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.925);
+    }
+    
+    .x-div > i {
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        right: 2.5%;
+        top: 3%;
+    }
+    
+    .sidebar {
+        background-color: white;
+        width: 96%;
+        height: 90%;
+        position: fixed;
+        bottom: 2%;
+        left: 2%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        cursor: pointer;
-        padding-left: 15px;
-      }
+    }
     
-      .burger-menu > span {
-        width: 20px;
-        height: 1px;
-        border: 1px solid white;
-      }
+    .sidebar > a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        padding: 12px 2%;
+        font-weight: 600;
+    }
+    
+    .sidebar :first-child {
+        background-color: #FFBB38;
+        margin-top: 1.5%;
+    }
+    
+    .sidebar > a:hover {
+        background-color: #FFBB38;
+        transition: 0.5s all;
+    }
+    
+    .sid-drop-down {
+        display: none;
+    }
 }
 
 @media (max-width: 780px) {

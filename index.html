@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/clients.css" />
     <link rel="stylesheet" href="./styles/features.css" />
     <link rel="stylesheet" href="./styles/services.css" />
+    <link rel="stylesheet" href="./styles/cta.css" />
     <title>Gp Bootstrap Template-Index</title>
   </head>
   <body>
@@ -69,26 +70,31 @@
         </nav>
         <div class="get-started-btn">
           <a class="aboutBtn" href="#" onclick="alertBtn()">Get Started</a>
-          <div class="burger-menu" onclick="sidebar()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+          <i class="bi bi-list" onclick="sidebarBtn()"></i>
         </div>
-        <div class="back-sidebar">
+        <div class="back-sidebar" onclick="sidebarBtn()">
           <div class="x-div">
             <i class="bi bi-x-lg"></i>
           </div>
-        <ul class="sidebar">
-          <li><a href="#hero"></a></li>
-          <li><a href="#about"></a></li>
-          <li><a href="#services"></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-      </div>
+          <div class="sidebar">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="">Portfolio</a>
+            <a href="">Team</a>
+            <a href=""
+              >Drop Down
+              <div class="sid-drop-down">
+                <a href="">Drop Down 1</a>
+                <a href="">Deep Drop Down</a>
+                <a href="">Drop Down 2</a>
+                <a href="">Drop Down 3</a>
+                <a href="">Drop Down 4</a>
+              </div>
+            </a>
+            <a href="">Contact</a>
+          </div>
+        </div>
       </header>
       <!-- hero section -->
       <section id="hero">
@@ -292,6 +298,22 @@
                 sit aspernatur
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="cta">
+        <div class="cta">
+          <div class="cta-div">
+            <h1>Call To Action</h1>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </p>
+            <li>
+              <a href="#hero">Call To Action</a>
+            </li>
           </div>
         </div>
       </section>
