@@ -72,24 +72,36 @@
           <a class="aboutBtn" href="#" onclick="alertBtn()">Get Started</a>
           <i class="bi bi-list" onclick="sidebarBtn()"></i>
         </div>
-        <div class="back-sidebar" onclick="sidebarBtn()">
+        <div class="back-sidebar">
           <div class="x-div">
-            <i class="bi bi-x-lg"></i>
+            <i class="bi bi-x-lg" onclick="closesidebarBtn()"></i>
           </div>
           <div class="sidebar">
-            <a href="#hero">Home</a>
+            <a class="active" href="#hero">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
-            <a href="">Portfolio</a>
-            <a href="">Team</a>
-            <a href=""
+            <a href="#">Portfolio</a>
+            <a href="#">Team</a>
+            <a href="#" onclick="dropdownBtn()"
               >Drop Down
-              <div class="sid-drop-down">
-                <a href="">Drop Down 1</a>
-                <a href="">Deep Drop Down</a>
-                <a href="">Drop Down 2</a>
-                <a href="">Drop Down 3</a>
-                <a href="">Drop Down 4</a>
+              <div class="back-side-drop-down">
+                <div class="side-drop-down">
+                  <a href="#">Drop Down 1</a>
+                  <a href="#" onclick="deepdropdownBtn()">Deep Drop Down
+                    <div class="back-deep-side-drop-down" >
+                      <div class="deep-side-drop-down">
+                        <a href="#">Deep Drop Down 1</a>
+                        <a href="#">Deep Drop Down 2</a>
+                        <a href="#">Deep Drop Down 3</a>
+                        <a href="#">Deep Drop Down 4</a>
+                        <a href="#">Deep Drop Down 5</a>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#">Drop Down 2</a>
+                  <a href="#">Drop Down 3</a>
+                  <a href="#">Drop Down 4</a>
+                </div>
               </div>
             </a>
             <a href="">Contact</a>
