@@ -1,56 +1,37 @@
 const aboutBtn = document.querySelector(".aboutBtn")
+const sidebar = document.querySelector(".back-sidebar")
+const closesidebar = document.querySelector(".back-sidebar")
+const dropdown = document.querySelector(".back-side-drop-down")
+const deepdropdown = document.querySelector(".back-deep-side-drop-down")
 
-function alertBtn(value) {
+const about = () => {
     aboutBtn.href = "#about"
 }
 
-const sidebar = document.querySelector(".back-sidebar")
-
-function sidebarBtn(value) {
+const sidebarBtn = () => {
     sidebar.style.display = "block";
 }
 
-const closesidebar = document.querySelector(".back-sidebar")
-
-function closesidebarBtn(value) {
+const closesidebarBtn = () => {
     closesidebar.style.display = "none"
 }
 
-const dropdown = document.querySelector(".back-side-drop-down")
-
-function dropdownBtn(value) {
-    dropdown.style.display = "block"
+const dropdownBtn = () => {
+    if (dropdown.style.display === "none") {
+        dropdown.style.display = "block"
+    } else {
+        dropdown.style.display = "none"
+    }
 }
 
-const deepdropdown = document.querySelector(".back-deep-side-drop-down")
-
-function deepdropdownBtn(value) {
-    deepdropdown.style.display = "block"
+const deepdropdownBtn = () => {
+    if (deepdropdown.style.display === "none") {
+        deepdropdown.style.display = "block"
+    } else {
+        deepdropdown.style.display = "none"
+    }
 }
 
-const numbers = 2;
-let table = 10;
-
-for(let i = 1; i <= table; i++) {
-    let result = i*numbers;
-    console.log(`${table} * ${i} = ${result}`)
-}
-
-// prob
-// const closedropdown = document.querySelector(".back-side-drop-down")
-
-// function closedropdownBtn(value) {
-//     closedropdown.style.display = "none"
-// }
-
-// $(document).ready(function(){
-//     $(`.bi-list`).click(function(){
-//         $(`.sidebar`).addClass(`active`);
-//         $(`bi-list`).acc("visibility", "visible");
-//     });
-
-//     $(`close-btn`)
-// });
 
 // let value = "done,n"
 

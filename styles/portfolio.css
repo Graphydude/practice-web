@@ -1,0 +1,152 @@
+.Portfolio {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.port-div {
+  width: 1300px;
+}
+
+.port-title > h5 {
+  font-size: 14px;
+  padding-bottom: 10px;
+  color: #aaaaaa;
+}
+
+.port-title > h5::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  color: #ffde9e;
+  display: inline-block;
+  margin: 4px 10px;
+}
+
+.port-title > h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.portfolio-filters-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-filters {
+  width: 250px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-filters > li {
+  list-style: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.portfolio-filters > li:hover {
+  background-color: #ffbb38;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+.portfolio-filters > a {
+  font-size: 14px;
+}
+
+.portfolio-filters-active {
+  background-color: #ffbb38;
+}
+
+.port-cards-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card-div {
+  
+}
+
+.card {
+  width: 415px;
+  height: 420px;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+}
+
+.card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  transition: 0.5s all;
+}
+
+.card:hover > img {
+  opacity: 40%;
+  transform: scale(1.3);
+}
+
+.card-info {
+  position: absolute;
+  left: 20px;
+  bottom: 60px;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.card-info > h2 {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.card-info > h5 {
+  color: rgba(255, 255, 255, 0.575);
+  font-weight: 600;
+}
+
+.card:hover > .card-info {
+  opacity: 100;
+}
+
+.card-icon {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.card:hover > .card-icon {
+  opacity: 100;
+}
+
+.card-icon > i {
+  color: white;
+  font-size: 24px;
+}
+
+.image-cup {
+  height: 320px !important;
+}
+
+.image-flower-pot {
+  height: 300px;
+}
+
+.image-fluid {
+  height: 615px;
+}
+
+.image-lamp {
+  height: 615px;
+}
